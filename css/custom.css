@@ -1,0 +1,13 @@
+.profile-img{
+    max-height: 700px;
+}
+
+.work-thumb{
+    height: 200px;
+    width: 200px;
+}
+
+/* #work{
+    display: flex;
+    justify-content: space-between;
+} */
