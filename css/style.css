@@ -416,6 +416,9 @@ h1, h2, h3, h4, h5,
       color: #000; }
 
 .site-mobile-menu {
+  height:400px !important;
+  width: 100vw !important;
+  border-bottom:solid 2px #007bff;
   width: 300px;
   position: fixed;
   right: 0;
@@ -641,6 +644,7 @@ h1, h2, h3, h4, h5,
 
 .site-section {
   /* padding: 10em 0; */
+  margin-top: 200px;
  }
   @media (max-width: 991.98px) {
     .site-section {
