@@ -264,16 +264,16 @@ jQuery(document).ready(function($) {
 
   var siteScroll = function() {
 
-  	
-
   	$(window).scroll(function() {
 
   		var st = $(this).scrollTop();
 
   		if (st > 100) {
-  			$('.js-sticky-header').addClass('shrink');
+				$('.js-sticky-header').addClass('shrink');
+				$('.site-logo').css("display", "block");
   		} else {
-  			$('.js-sticky-header').removeClass('shrink');
+				$('.js-sticky-header').removeClass('shrink');
+				$('.site-logo').css("display", "none");
   		}
 
   	}) 
