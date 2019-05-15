@@ -3,8 +3,8 @@
 }
 
 .work-thumb{
-    height: 200px;
-    width: 200px;
+    /* height: 300px;
+    width: 480px; */
 }
 
 .owl-stage-outer{
@@ -15,4 +15,13 @@
 
 .icon-menu{
     font-size: 2.5rem !important;
+}
+
+/* --- work --- */
+.work-img{
+    border: 1px solid #000;
+}
+
+#work-card{
+    padding-bottom: 30px;
 }
