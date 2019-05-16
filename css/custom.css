@@ -25,3 +25,11 @@
 #work-card{
     padding-bottom: 30px;
 }
+
+.work-text > h3{
+    color:#21e742 !important;
+}
+
+.work-text > span {
+    font-style: italic;
+}

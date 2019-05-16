@@ -704,7 +704,8 @@ h1, h2, h3, h4, h5,
 .image-absolute-box {
   position: relative; }
   .image-absolute-box .box {
-    position: absolute;
+    /* position: absolute; */
+    margin-bottom: 30px;
     background: #007bff;
     padding: 30px;
     max-width: 300px;
