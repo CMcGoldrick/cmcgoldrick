@@ -21,6 +21,7 @@
 .skill-h2{
     color: #333;
     font-weight: 700;
+    text-align:center;
 }
 #skills-container{
     margin-top: 25px; 
@@ -57,4 +58,11 @@ footer{
 }
 footer > p{
     padding-top: 30px;
+}
+
+/* -- media queries -- */
+@media(max-width: 786px){
+    #tag_canvas_wrapper{
+        display: none;
+    }
 }
