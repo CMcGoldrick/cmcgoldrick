@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -21,7 +20,10 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/skills.css">
+
+    <link rel="stylesheet" href="css/slider/reset.css">  
+    <link rel="stylesheet" href="css/slider/style.css">  
+    <script src="js/slider/modernizr.js"></script> 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -49,10 +51,10 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
-                <!-- <li><a href="#skills-section" class="nav-link">Skills</a></li> -->
-                <li><a href="#process-section" class="nav-link">Process</a></li>
                 <li><a href="#work-section" class="nav-link">Work</a></li>
-                <li><a href="#services-section" class="nav-link">Testimonials</a></li>
+                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                <li><a href="process.html" class="nav-link">Process</a></li>
+                <li><a href="articles.html" class="nav-link">Articles</a></li>
               </ul>
             </nav>
           </div>
@@ -75,13 +77,16 @@
           <div style="margin-top:-130px"class="col-lg-4 mr-auto" data-aos="fade-up">
             <h1>Ciaran Francis McGoldrick</h1>
             <em>
-              <p style="color: #000">Eloquent Web Development & Design</p>
+              <p style="color: #000">C# (Asp.net) Development</p>
             </em>
-            <!-- <p class="mb-5">Web Developer</p>
-            <p class="mb-5">Crypto Economist</p>
-            <p class="mb-5">Tech Optimist</p> -->
-            <p><a href="#process-section" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
-
+            <p><a href="#work-section" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+            <div style="position: relative;" class="image-absolute-box">
+              <div style="background-color:#21e742;" class="box" data-aos="fade-up">
+                <i class="fas fa-user-check"></i><img style="height:50px" src="images/upwork_400x400.png" alt="Image"
+                  class="img-fluid">
+                <h3>100% job success on Upwork</h3>
+              </div>
+            </div>
           </div>
           <div class="col-lg-2 ml-auto"  data-aos="fade-up" data-aos-delay="100">
             <figure class="img-absolute">
@@ -92,173 +97,20 @@
       </div>
     </div>
 
-    <div class="site-section section-1" id="skills-section">
-      <div class="container">
-        <div class="row">
-
-        </div>
-      </div>
-
-    </div> 
-
-    <div class="site-section section-2" id="process-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <h2 class="section-title">My Process</h2>
-            <p>I follow a strict process of Researching, Designing, Developing and Deploying. Working closely with you and optimizing communication to ensure that our visions and objectives align.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="">
-            <div class="process p-3">
-              <span class="number">01</span>
-              <div>
-                <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Research</h3>
-              </div>
-    
-            </div>
-          </div>
-          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="process p-3">
-              <span class="number">02</span>
-              <div>
-                <span class="fas fa-pencil-ruler display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Design</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="process p-3">
-              <span class="number">03</span>
-              <div>
-                <span class="fas fa-code display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Development</h3>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="process p-3">
-              <span class="number">04</span>
-              <div>
-                <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Launch</h3>
-              </div>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-
-      <div id="skills-container" class="container">
-        <h2 class="skill-h2">Skill Set</h2>
-        <div class="row">
-          <div class="col-md-3 offset-md-1">
-            <h5>Design</h5>
-            <ul>
-              <li>Photoshop</li>
-              <li>Mockflow</li>
-            </ul>
-
-            <h5>Front-End Development</h5>
-            <ul>
-              <li>HTML, HTML5</li>
-              <li>CSS, CSS3</li>
-              <li>JavaScript:</li>
-              <ul>
-                <li>React</li>
-                <li>Vue.js</li>
-                <li>JQuery</li>
-              </ul>
-            </ul>
-          </div>
-
-          <div class="col-md-4">
-            <div id="tag_canvas_wrapper">
-              <canvas width="400" height="400" id="tag_canvas" style="width: 100%; cursor: pointer;">
-                <p>Anything in here will be replaced on browsers that support the canvas element</p>
-              </canvas>
-            </div>
-            <div id="tags" style="display: none;">
-              <ul style="color:green">
-                <li><a href="#">jQuery</a></li>
-                <li><a href="#">React</a></li>
-                <li><a href="#">HTML5</a></li>
-                <!-- <li><a href="#">SASS</a></li> -->
-                <li><a href="#">PostgreSQL</a></li>
-                <!-- <li><a href="#">npm</a></li> -->
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">CSS3</a></li>
-                <li><a href="#">Bootstrap</a></li>
-                <!-- <li><a href="#">LESS</a></li> -->
-                <li><a href="#">SQL</a></li>
-                <li><a href="#">JSON</a></li>
-                <li><a href="#">XML</a></li>
-                <li><a href="#">Git</a></li>
-                <li><a href="#">Wordpress</a></li>
-                <!-- <li><a href="#">AWS</a></li> -->
-                <li><a href="#">Linux</a></li>
-                <li><a href="#">REST</a></li>
-                <li><a href="#">Vue.js</a></li>
-                <li><a href="#">Heroku</a></li>
-                <li><a href="#">Ruby on Rails</a></li>
-                <li><a href="#">C#</a></li>
-                <li><a href="#">Asp.net</a></li>
-                <li><a href="#">Node.js</a></li>
-                <li><a href="#">MongoDB</a></li>
-                <li><a href="#">Firebase</a></li>
-                <li><a href="#">Express</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="col-md-4">
-            <h5>Back-End Development</h5>
-            <ul>
-              <li>Ruby on Rails</li>
-              <li>C# (Asp .net)</li>
-              <li>JavaScript:</li>
-              <ul>
-                <li>Node.js</li>
-                <li>Express</li>
-              </ul>
-              <li>Databases:</li>
-              <ul>
-                <li>PostgreSQL</li>
-                <li>SQL</li>
-                <li>MongoDB</li>
-                <li>FireBase</li>
-              </ul>
-            </ul>
-          </div>
-      </div>
-    </div>
-
     <div class="site-section section-2" id="work-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5">
             <h2 class="section-title">My Work</h2>
-            <p>Please find below a few examples of projects I have worked on. Most of my code is not made public or pushed to
-              repositories like Github and Bitbucket. For any inquiries about additional projects or specifics on code usage, feel free to <a href="#contact-section">Contact</a> me.</p>
-            </div>
-            <div class="col-lg-6">
-              <div style="position: relative;" class="image-absolute-box">
-                <div style="background-color:#21e742;" class="box" data-aos="fade-up">
-                  <i class="fas fa-user-check"></i><img style="height:50px" src="images/upwork_400x400.png" alt="Image"
-                    class="img-fluid">
-                  <h3>100% job success on Upwork</h3>
-                </div>
-              </div>
-            </div>
+            <p>Please find examples of projects to which I have contributed.</p>
+            <p>Most of my code is not made public in repositories like Github and Bitbucket. For any inquiries about these projects or specifics on code usage, feel free to <a href="#contact-section">Contact</a> me.</p>
+          </div>
         </div>
       </div>
         
         <div class="container" id="work">
-          <div class="row">
-            <div id="work-card" class="col-md-6">
+          <div>
+            <div id="work-card">
               <a class="work-thumb" href="https://www.firstroanoke.com/" target="_blank">
                 <div class="work-text">
                   <h3>First Roanoke</h3>
@@ -267,7 +119,7 @@
                 <img src="images/work/first-roanoke.png" alt="Image" class="img-fluid work-img">
               </a>
             </div>
-            <div id="work-card" class="col-md-6">
+            <div id="work-card">
               <a class="work-thumb" href="https://inparadiserentals.com/" target="_blank">
                 <div class="work-text">
                   <h3>In Paradise Rentals</h3>
@@ -278,8 +130,8 @@
             </div>
           </div>
           
-          <div class="row">
-            <div id="work-card" class="col-md-6">
+          <div>
+            <div id="work-card">
               <a class="work-thumb" href="http://www.prime-time-picks.com/" target="_blank">
                 <div class="work-text">
                   <h3>Prime Time Picks</h3>
@@ -288,7 +140,7 @@
                 <img src="images/work/prime-time-picks.png" alt="Image" class="img-fluid work-img">
               </a>
             </div>
-            <div id="work-card" class="col-md-6">
+            <div id="work-card">
               <a class="work-thumb" href="https://composerschoir.net/" target="_blank">
                 <div class="work-text">
                   <h3>Composers Choir</h3>
@@ -299,8 +151,8 @@
             </div>
           </div>
 
-          <div class="row">
-            <div id="work-card" class="col-md-6">
+          <div>
+            <div id="work-card">
               <a class="work-thumb" href="https://ticketmanager.com/" target="_blank">
                 <div class="work-text">
                   <h3>Ticket Manager</h3>
@@ -309,86 +161,96 @@
                 <img src="images/work/ticket-manager.png" alt="Image" class="img-fluid work-img">
               </a>
             </div>
-            <div id="work-card" class="col-md-6">
+            <div id="work-card">
             </div>
           </div>
 
         </div>
     </div>
 
-    <div class="site-section bg-light" id="services-section">
+    <div class="site-section bg-light" id="testimonials-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5">
             <h2 class="section-title">Testimonials</h2>
-            <p>Please refer below to customer testimonials:</p>
+          </div>
+          <div class="col-lg-6">
+            <div style="position: relative;" class="image-absolute-box">
+              <div style="background-color:#21e742;" class="box" data-aos="fade-up">
+                <i class="fas fa-user-check"></i><img style="height:50px" src="images/upwork_400x400.png" alt="Image"
+                  class="img-fluid">
+                <h3>100% job success on Upwork</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="owl-carousel nonloop-block-14">
+      <div class="cd-testimonials-wrapper cd-container">
+          <ul class="cd-testimonials">
+            <li>
+              <p class="testimonial-content">C. McGoldrick completed the work in a timely fashion with superb communication and professional demeanor. I highly
+                  recommend working with him. He is easy to work with, communicates well, and does a terrific job. He goes above and
+                  beyond to make sure the customer is satisfied with the work. Thank you, Ciaran!</p>
+              <div class="cd-author">
+                <i class="fas fa-female"></i>
+                <ul class="cd-author-info">
+                  <li>Janice L. Blake</li>
+                </ul>
+              </div>
+            </li>
         
-        <div class="service">
-          <div>
-            <span class="display-4 text-primary mb-4 d-inline-block"><i class="fas fa-female"></i></span>
-            <h3>Janice L. Blake</h3>
-            <p>C. McGoldrick completed the work in a timely fashion with superb communication and professional demeanor. I highly
-            recommend working with him. He is easy to work with, communicates well, and does a terrific job. He goes above and
-            beyond to make sure the customer is satisfied with the work. Thank you, Ciaran!</p>
-          </div>
-        </div>
-
-
-        <div class="service">
-          <div>
-            <span class="display-4 text-primary mb-4 d-inline-block"><i class="fas fa-male"></i></span>
-            <h3>Tyler Harden</h3>
-            <p>While the project ended up taking much longer than anticipated, he regularly communicated updates and went above and
-            beyond to troubleshoot that many unexpected challenges that arose. I was incredibly please by his work ethic - something
-            that's not easy to find these days. I would highly recommend this freelancer and am already looking for other
-            opportunities to utilize him!</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="display-4 text-primary mb-4 d-inline-block"><i class="fas fa-male"></i></span>
-            <h3>Jay Wengrow</h3>
-            <p>In working with Ciarán during Actualize, I have found him to have all the attributes that make for a successful software
-            developer. He learns quickly, loves his craft, is personable, and has great communication skills. In particular, his
-            excitement to tackle new and tough problems is infectious. He'd be an invaluable asset to any development team!</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="display-4 text-primary mb-4 d-inline-block"><i class="fas fa-female"></i></span>
-            <h3>Janice L. Blake</h3>
-            <p>Ciaran did a fabulous job on my website in a timely manner and was very easy to work with and went above and beyond the
-              call of duty working on my site. He went the extra mile and suggested edits I didn't even knew existed. Thumbs Up for a
-              superb job!</p>
-            </div>
-          </div>
-
-          <div class="service">
-            <div>
-              <span class=" display-4 text-primary mb-4 d-inline-block"><i class="fas fa-female"></i></span>
-              <h3>Nick Hunt</h3>
-              <p>Ciaran always does good work and did his best on this job as well. Will use again on other projects!</p>
-            </div>
-          </div>
-
-
-        <!-- <div class="service">
-          <div>
-            <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Creative Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>  -->
-
-
-
+            <li>
+              <p class="testimonial-content">While the project ended up taking much longer than anticipated, he regularly communicated updates and went above and
+                  beyond to troubleshoot that many unexpected challenges that arose. I was incredibly please by his work ethic - something
+                  that's not easy to find these days. I would highly recommend this freelancer and am already looking for other
+                  opportunities to utilize him!</p>
+              <div class="cd-author">
+                <i class="fas fa-male"></i>
+                <ul class="cd-author-info">
+                  <li>Tyler Harden</li>
+                </ul>
+              </div>
+            </li>
+            
+            <li>
+              <p class="testimonial-content">Ciaran always does good work and did his best on this job as well. Will use again on other projects!</p>
+              <div class="cd-author">
+                <i class="fas fa-male"></i>
+                <ul class="cd-author-info">
+                  <li>Nick Hunt</li>
+                </ul>
+              </div>
+            </li>
+           
+            <li>
+              <p class="testimonial-content">Ciaran did a fabulous job on my website in a timely manner and was very easy to work with and went above and beyond the
+                  call of duty working on my site. He went the extra mile and suggested edits I didn't even knew existed. Thumbs Up for a
+                  superb job!</p>
+              <div class="cd-author">
+                <i class="fas fa-female"></i>
+                <ul class="cd-author-info">
+                  <li>Janice Blake</li>
+                </ul>
+              </div>
+            </li>
+            
+            <li>
+              <p class="testimonial-content">In working with Ciarán during Actualize, I have found him to have all the attributes that make for a successful software
+                  developer. He learns quickly, loves his craft, is personable, and has great communication skills. In particular, his
+                  excitement to tackle new and tough problems is infectious. He'd be an invaluable asset to any development team!</p>
+              <div class="cd-author">
+                <i class="fas fa-male"></i>
+                <ul class="cd-author-info">
+                  <li>Jay Wengrow</li>
+                  <li>CEO, Actualize</li>
+                </ul>
+              </div>
+            </li>
+            
+          </ul> <!-- cd-testimonials -->
+        </div> <!-- cd-testimonials-wrapper -->
+        
       </div>
     </div>
 
@@ -398,8 +260,6 @@
 
         <div class="row justify-content-center">
           <div class="col-md-7">
-
-
             
             <h2 class="section-title mb-3">Message Me</h2>
             <!-- google mailer -->
@@ -439,7 +299,10 @@
                 </div>
               </div>
             </form> -->
-<form name="contactform" method="post" action="send_form_email.php">
+
+
+
+  <form name="contactform" method="post" action="send_form_email.php">
   <table width="450px">
     <tr>
       <td valign="top">
@@ -450,7 +313,7 @@
       </td>
     </tr>
     <tr>
-      <td valign="top"">
+      <td valign="top">
   <label for=" last_name">Last Name *</label>
       </td>
       <td valign="top">
@@ -487,7 +350,7 @@
       </td>
     </tr>
   </table>
-</form>
+</form> 
             
           </div>
         </div>
@@ -519,7 +382,12 @@
   
   <script src="js/main.js"></script>
   <script src="js/skills.js"></script>
-  
+
+  <script src="js/slider/jquery-2.1.1.js"></script>
+  <script src="js/slider/masonry.pkgd.min.js"></script>
+  <script src="js/slider/jquery.flexslider-min.js"></script>
+  <script src="js/slider/main.js"></script> 
+
   <?php include 'send_form_email.php';?>
 
   </body>

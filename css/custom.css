@@ -35,7 +35,7 @@
 }
 
 #work-card{
-    padding-bottom: 30px;
+    padding-bottom: 45px;
 }
 
 .work-text > h3{
@@ -46,6 +46,16 @@
     font-style: italic;
 }
 
+/* -- testimonials -- */
+.testimonial-icon{
+    color: #007bff!important;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.testimonial-name{
+    
+}
 
 /* --- footer ---  */
 footer{

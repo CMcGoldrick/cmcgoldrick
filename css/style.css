@@ -643,8 +643,7 @@ h1, h2, h3, h4, h5,
         max-width: 100%; } }
 
 .site-section {
-  /* padding: 10em 0; */
-  margin-top: 200px;
+  background: #efefef;
  }
   @media (max-width: 991.98px) {
     .site-section {
@@ -763,13 +762,13 @@ h1, h2, h3, h4, h5,
     transition: .3s all ease;
     margin-top: 20px; }
     .work-thumb .work-text h3 {
-      font-size: 1rem;
+      font-size: 3rem;
       font-weight: 900;
       color: #fff;
       margin: 0;
       padding: 0; }
     .work-thumb .work-text .category {
-      font-size: .8rem;
+      font-size: 2rem;
       color: rgba(255, 255, 255, 0.7); }
   .work-thumb:hover {
     z-index: 3;
