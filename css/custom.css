@@ -1,16 +1,36 @@
-.profile-img{
-    max-height: 700px;
+.home-title{
+    padding: 20px 10px;
 }
 
-.work-thumb{
-    /* height: 300px;
-    width: 480px; */
+.get-started-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.breakline{
+    background: lightcyan;
+}
+
+.profile-img{
+    max-height: 700px;
 }
 
 .owl-stage-outer{
     display: block;
     width: 80vw;
     margin: 0 auto;
+}
+
+#social-icon{
+    color: #fff;
+    font-size: x-large;
+    padding: 13px 13px;
+}
+
+#social-icon:hover{
+    font-size: 2rem;
+    padding: 6px 13px;
 }
 
 .icon-menu{

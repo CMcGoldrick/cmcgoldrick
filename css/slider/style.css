@@ -49,7 +49,7 @@ Main components
   height: 50px;
   padding-top: 8px;
   margin-left: -25px;
-  background: rgba(32, 32, 34, 0.9);
+  color: #007bff;
   font-family: "Georgia", serif;
   font-size: 70px;
   font-size: 4.375rem;
@@ -87,8 +87,6 @@ Main components
   opacity: 1;
 }
 .cd-testimonials p {
-  font-family: "Georgia", serif;
-  font-style: italic;
   line-height: 1.4;
   margin-bottom: 1em;
   padding: 0 14px;
