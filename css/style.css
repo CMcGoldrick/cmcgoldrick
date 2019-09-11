@@ -13,6 +13,11 @@ body {
   background: #000;
   color: #fff; }
 
+  .nav-link{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -301,7 +306,9 @@ h1, h2, h3, h4, h5,
   width: 100%; }
   .site-navbar .container-fluid {
     padding-left: 7rem;
-    padding-right: 7rem; }
+    padding-right: 7rem;
+    padding-top: 10px;
+    padding-bottom: 10px; }
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid #f3f3f4 !important; }
   .site-navbar .site-navigation .site-menu {
@@ -572,7 +579,9 @@ h1, h2, h3, h4, h5,
       display: inline-block; }
       .sticky-wrapper .site-navbar .site-menu > li > a.active {
         color: #fff;
-        position: relative; }
+        position: relative;
+        
+      }
         .sticky-wrapper .site-navbar .site-menu > li > a.active:after {
           height: 2px;
           background: #fff;

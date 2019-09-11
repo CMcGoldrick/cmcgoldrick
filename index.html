@@ -53,7 +53,7 @@
                 <li><a href="#home-section" class="nav-link">Home</a></li>
                 <li><a href="#work-section" class="nav-link">Work</a></li>
                 <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-                <li><a href="process.html" class="nav-link">Process</a></li>
+                <!-- <li><a href="process.html" class="nav-link">Process</a></li> -->
                 <li><a href="articles.html" class="nav-link">Articles</a></li>
               </ul>
             </nav>
@@ -80,8 +80,13 @@
             <p>Full-Stack Web Application Developer</p>
             <p>&#10149; C#, ASP.NET &#38; JavaScript</p>
             <hr class="breakline">
-            <div class="social-links"><i id="social-icon" class="fab fa-instagram"></i><i id="social-icon" class="fab fa-github-square"></i><i id="social-icon" class="fab fa-linkedin"></i><i id="social-icon" class="fab fa-twitter-square"></i><i id="social-icon" class="fab fa-medium"></i></div>
-            <div><a href="#work-section" class="btn btn-outline-light py-3 px-5 get-started-btn nav-link">Get Started</a></div>
+            <div class="social-links">
+              <a href="https://github.com/CMcGoldrick" target="_blank"><i id="social-icon" class="fab fa-github-square"></i></a>
+              <a href="https://www.linkedin.com/in/ciaran-mcgoldrick/" target="_blank"><i id="social-icon" class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/CiaranMcGold" target="_blank"><i id="social-icon" class="fab fa-twitter-square"></i></a>
+              <a href="https://medium.com/@ciaran_mcgoldrick" target="_blank"><i id="social-icon" class="fab fa-medium"></i></a>
+            </div>
+            <div><a role="navigation" href="#work-section" class="btn btn-outline-light py-3 px-5 get-started-btn nav-link">Get Started</a></div>
             
             <!-- <div style="position: relative;" class="image-absolute-box">
               <div style="background-color:#21e742;" class="box" data-aos="fade-up">
@@ -91,10 +96,6 @@
               </div>
             </div>
            -->
-          
-           
-           
-
           </div>
           <div class="col-lg-2 ml-auto"  data-aos="fade-up" data-aos-delay="100">
             <figure class="img-absolute">
@@ -105,13 +106,15 @@
       </div>
     </div>
 
-    <div class="site-section section-2" id="work-section">
+    <div class="site-section section-2 bg-light" id="work-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <h2 class="section-title">My Work</h2>
-            <p>Please find examples of projects to which I have contributed.</p>
-            <p>Most of my code is not made public in repositories like Github and Bitbucket. For any inquiries about these projects or specifics on code usage, feel free to <a href="#contact-section">Contact</a> me.</p>
+            <div id="work-card">
+              <p>Please find examples of projects to which I have contributed.</p>
+              <p>Most of my code is not made public in repositories like Github and Bitbucket. For any inquiries about these projects or specifics on code usage, feel free to <a href="#contact-section">Contact</a> me.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -175,6 +178,8 @@
 
         </div>
     </div>
+
+    <hr>
 
     <div class="site-section bg-light" id="testimonials-section">
       <div class="container">
@@ -260,96 +265,46 @@
         <div class="row justify-content-center">
           <div class="col-md-7">
             
-            <h2 class="section-title mb-3">Message Me</h2>
+            <h2 class="section-title">Message Me</h2>
             <!-- google mailer -->
             <!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server  -->
-            <p class="mb-5"></p>
-          
-            <!-- <form method="post" action="https://formspree.io/ciaran_mcgoldrick@hotmail.com" data-aos="fade">
-              <div class="form-group row">
-                <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Last name">
+            
+            <div class="container-contact100">
+
+                <div class="wrap-contact100">
+                  <form class="contact100-form validate-form">
+                    <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                      <input class="input100" type="text" name="name" placeholder="Full Name">
+                      <span class="focus-input100"></span>
+                    </div>
+            
+                    <div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
+                      <input class="input100" type="text" name="email" placeholder="E-mail">
+                      <span class="focus-input100"></span>
+                    </div>
+            
+                    <div class="wrap-input100 validate-input" data-validate = "Please enter your phone">
+                      <input class="input100" type="text" name="phone" placeholder="Phone">
+                      <span class="focus-input100"></span>
+                    </div>
+            
+                    <div class="wrap-input100 validate-input" data-validate = "Please enter your message">
+                      <textarea class="input100" name="message" placeholder="Your Message"></textarea>
+                      <span class="focus-input100"></span>
+                    </div>
+            
+                    <div class="container-contact100-form-btn">
+                      <button class="contact100-form-btn">
+                        <span>
+                          <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+                          Send
+                        </span>
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Subject">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="email" class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10" placeholder="Write your message here."></textarea>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-6">
-                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
-                </div>
-              </div>
-            </form> -->
-
-
-
-  <form name="contactform" method="post" action="send_form_email.php">
-  <table width="450px">
-    <tr>
-      <td valign="top">
-        <label for="first_name">First Name *</label>
-      </td>
-      <td valign="top">
-        <input type="text" name="first_name" maxlength="50" size="30">
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-  <label for=" last_name">Last Name *</label>
-      </td>
-      <td valign="top">
-        <input type="text" name="last_name" maxlength="50" size="30">
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <label for="email">Email Address *</label>
-      </td>
-      <td valign="top">
-        <input type="text" name="email" maxlength="80" size="30">
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <label for="telephone">Telephone Number</label>
-      </td>
-      <td valign="top">
-        <input type="text" name="telephone" maxlength="30" size="30">
-      </td>
-    </tr>
-    <tr>
-      <td valign="top">
-        <label for="comments">Comments *</label>
-      </td>
-      <td valign="top">
-        <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" style="text-align:center">
-        <input type="submit" value="Submit">
-      </td>
-    </tr>
-  </table>
-</form> 
+            
             
           </div>
         </div>
