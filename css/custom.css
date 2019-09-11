@@ -12,6 +12,7 @@
     background: lightcyan;
 }
 
+/* -- home -- */
 .profile-img{
     max-height: 700px;
 }
@@ -35,6 +36,11 @@
 
 .icon-menu{
     font-size: 2.5rem !important;
+}
+
+.social-links{
+  display:flex;
+  justify-content: center
 }
 
 /* --- process --- */

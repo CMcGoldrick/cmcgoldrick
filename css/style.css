@@ -664,11 +664,13 @@ h1, h2, h3, h4, h5,
 
 .cta a span {
   border-color: #007bff;
-  padding: 10px 20px; }
+  padding: 10px 20px; 
+  background: #007bff;
+  color: #fff;}
 
 .cta a:hover span {
-  background: #007bff;
-  color: #fff; }
+  background: #fff;
+  color: #333; }
 
 .cta a.active {
   border-bottom: none; }
