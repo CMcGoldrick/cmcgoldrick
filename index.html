@@ -78,7 +78,7 @@
             <h1 class="home-title">Ciar&#225;n Francis McGoldrick</h1>
             <hr class="breakline">  
             <p>Full-Stack Web Application Developer</p>
-            <p>&#10149; C#, ASP.NET &#38; JavaScript</p>
+            <p>&#10149; C# > ASP.NET, JavaScript &#38; HTML/CSS</p>
             <hr class="breakline">
             <div class="social-links">
               <a href="https://github.com/CMcGoldrick" target="_blank"><i id="social-icon" class="fab fa-github-square"></i></a>
@@ -112,8 +112,9 @@
           <div class="col-lg-12">
             <h2 class="section-title">My Work</h2>
             <div id="work-card">
-              <p>Please find examples of projects to which I have contributed.</p>
-              <p>Most of my code is not made public in repositories like Github and Bitbucket. For any inquiries about these projects or specifics on code usage, feel free to <a href="#contact-section">Contact</a> me.</p>
+              <p class="work-paragraph">
+                <!-- Please find a display of projects to which I have contributed.<br><br> -->
+              Projects to which I have contributed - Most of my code is not made public in repositories like Github and Bitbucket. For any inquiries about these projects or specifics on code usage, feel free to <a href="#contact-section" style="color:#000">Contact</a> me.</p>
             </div>
           </div>
         </div>
@@ -179,9 +180,17 @@
         </div>
     </div>
 
-    <hr>
-
-    <div class="site-section bg-light" id="testimonials-section">
+    <div class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <hr id="testimonials-section">
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="site-section bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -265,7 +274,7 @@
         <div class="row justify-content-center">
           <div class="col-md-7">
             
-            <h2 class="section-title">Message Me</h2>
+            <h2 class="section-title">Get a Consultation</h2>
             <!-- google mailer -->
             <!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server  -->
             
@@ -294,12 +303,15 @@
                     </div>
             
                     <div class="container-contact100-form-btn">
-                      <button class="contact100-form-btn">
+                      <!-- <button class="contact100-form-btn">
                         <span>
                           <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
                           Send
                         </span>
-                      </button>
+                      </button> -->
+                        <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block" style="margin:0 auto;">
+                          <li class="cta"><a href="#contact-section" class="nav-link"><span style="padding: 15px 30px;" class="rounded border border-primary">Send    <i class="fas fa-paper-plane"></i></span></a></li>
+                        </ul>
                     </div>
                   </form>
                 </div>
@@ -312,8 +324,9 @@
     </div>
 
     <footer>
+        <p>Made With <img style="height:25px" src="images/heavy-black-heart.png"> By Ciarán McGoldrick</p>
       <p>
-        Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | Ciaran Francis McGoldrick</a>
+        Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved</a>
       </p>
     </footer>
 
