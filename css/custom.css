@@ -1,3 +1,7 @@
+hr{
+  border-top: 2px solid !important;
+}
+
 .home-title{
     padding: 20px 10px;
 }
@@ -92,6 +96,10 @@
     padding: 10px;
 }
 
+.testimonial-link{
+  font-size: 20px !important;
+}
+
 /* --- footer ---  */
 footer{
     text-align:center;
@@ -102,7 +110,7 @@ footer{
     border-top: 1px solid #999;
 }
 footer > p{
-    padding-top: 30px;
+    padding: 7px;
 }
 
 /* -- media queries -- */
