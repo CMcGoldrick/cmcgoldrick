@@ -200,7 +200,7 @@
                   recommend working with him. He is easy to work with, communicates well, and does a terrific job. He goes above and
                   beyond to make sure the customer is satisfied with the work. Thank you, Ciaran!</p>
               <div class="cd-author">
-                <i class="fas fa-female"></i>
+                <i class="fas fa-female"></i>&nbsp;&nbsp;&nbsp;
                 <ul class="cd-author-info">
                   <li>
                     <a target="_blank" href="https://www.upwork.com/fl/cfmcgoldrick" class="testimonial-link">
@@ -217,7 +217,7 @@
                   that's not easy to find these days. I would highly recommend this freelancer and am already looking for other
                   opportunities to utilize him!</p>
               <div class="cd-author">
-                <i class="fas fa-male"></i>
+                <i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;
                 <ul class="cd-author-info">
                   <li>
                     <a target="_blank" href="https://www.upwork.com/fl/cfmcgoldrick" class="testimonial-link">
@@ -231,7 +231,7 @@
             <li>
               <p class="testimonial-content">Ciaran always does good work and did his best on this job as well. Will use again on other projects!</p>
               <div class="cd-author">
-                <i class="fas fa-male"></i>
+                <i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;
                 <ul class="cd-author-info">
                   <li>
                     <a target="_blank" href="https://www.upwork.com/fl/cfmcgoldrick" class="testimonial-link">
@@ -247,7 +247,7 @@
                   call of duty working on my site. He went the extra mile and suggested edits I didn't even knew existed. Thumbs Up for a
                   superb job!</p>
               <div class="cd-author">
-                <i class="fas fa-female"></i>
+                <i class="fas fa-female"></i>&nbsp;&nbsp;&nbsp;
                 <ul class="cd-author-info">
                   <li>
                     <a target="_blank" href="https://www.upwork.com/fl/cfmcgoldrick" class="testimonial-link">
@@ -263,7 +263,7 @@
                   developer. He learns quickly, loves his craft, is personable, and has great communication skills. In particular, his
                   excitement to tackle new and tough problems is infectious. He'd be an invaluable asset to any development team!</p>
               <div class="cd-author">
-                <i class="fas fa-male"></i>
+                <i class="fas fa-male"></i>&nbsp;&nbsp;&nbsp;
                 <ul class="cd-author-info">
                   <li>
                     <a target="_blank" href="https://www.linkedin.com/in/ciaran-mcgoldrick/" class="testimonial-link">
@@ -293,43 +293,33 @@
             <div class="container-contact100">
 
                 <div class="wrap-contact100">
-                  <form class="contact100-form validate-form">
+                  <form onclick="clearThanks()" class="contact100-form validate-form gform" id="mailform">
                     <div class="wrap-input100 validate-input" data-validate="Please enter your name">
-                      <input class="input100" type="text" name="name" placeholder="Full Name">
+                      <input id="mailname" class="input100" type="text" name="name" placeholder="Full Name">
                       <span class="focus-input100"></span>
                     </div>
             
                     <div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
-                      <input class="input100" type="text" name="email" placeholder="E-mail">
+                      <input id="mailemail" class="input100" type="text" name="email" placeholder="E-mail">
                       <span class="focus-input100"></span>
                     </div>
             
                     <div class="wrap-input100 validate-input" data-validate = "Please enter your phone">
-                      <input class="input100" type="text" name="phone" placeholder="Phone">
+                      <input id="mailphone" class="input100" type="text" name="phone" placeholder="Phone">
                       <span class="focus-input100"></span>
                     </div>
             
                     <div class="wrap-input100 validate-input" data-validate = "Please enter your message">
-                      <textarea class="input100" name="message" placeholder="Your Message"></textarea>
+                      <textarea id="mailmessage" class="input100" name="message" placeholder="Your Message"></textarea>
                       <span class="focus-input100"></span>
-                    </div>
-            
-                    <div class="container-contact100-form-btn">
-                      <!-- <button class="contact100-form-btn">
-                        <span>
-                          <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
-                          Send
-                        </span>
-                      </button> -->
-                        <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block" style="margin:0 auto;">
-                          <li class="cta"><a href="#contact-section" class="nav-link"><span style="padding: 15px 30px;" class="rounded border border-primary">Send    <i class="fas fa-paper-plane"></i></span></a></li>
-                        </ul>
-                    </div>
+                    </div>                   
                   </form>
+                  <div id="thank-you"></div>
+
+                  <button onclick="sendMail()" class="cta sendmailbtn"><a class="nav-link"><span
+                  class="rounded border border-primary"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Send</span></a></button>     
                 </div>
-              </div>
-            
-            
+            </div>
           </div>
         </div>
       </div>
@@ -367,7 +357,38 @@
   <script src="js/slider/jquery.flexslider-min.js"></script>
   <script src="js/slider/main.js"></script> 
 
-  <?php include 'send_form_email.php';?>
-
-  </body>
+  <script>
+    function sendMail(){
+      $.ajax({
+        type: "POST",
+        url: "https://script.google.com/macros/s/AKfycbyXMra2Zd6IRVC7qbxT7JX03kJ6RgCDEc-OrYc/exec",
+        data: {
+          name: document.getElementById("mailname").value,
+          email: document.getElementById("mailemail").value,
+          phone: document.getElementById("mailphone").value,
+          message: document.getElementById("mailmessage").value
+        },
+        success: function(data) {
+          var idArray = ["mailname", "mailemail", "mailphone", "mailmessage"];
+          for (var i = 0; i < idArray.length; i++)
+          {
+            document.getElementById(idArray[i]).value = "";
+          }
+          var thanks = $("#thank-you");
+          thanks.html("<h3>Thank you for your inquiry, we will be in touch with you shortly</h3>")
+        } 
+      })
+    }
+    
+    function clearThanks()
+    {
+      var thanks = $("#thank-you");
+      thanks.html("")
+    }
+  </script>
+ 
+</body>
 </html>
+
+
+

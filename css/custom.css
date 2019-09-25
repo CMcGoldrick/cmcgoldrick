@@ -122,6 +122,10 @@ footer > p{
 
 
 /* -- form -- */
+.sendmailbtn{
+  display: block;
+  margin: 0 auto;
+}
 
 /*---------------------------------------------*/
 input {
