@@ -1,3 +1,7 @@
+*::selection{
+  color:#007bff !important;
+}
+
 hr{
   border-top: 1px solid !important;
 }
