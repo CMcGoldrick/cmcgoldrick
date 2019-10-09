@@ -765,7 +765,9 @@ h1, h2, h3, h4, h5,
 .work-thumb {
   position: relative;
   display: block;
-  cursor: pointer; }
+  cursor: pointer;
+  box-shadow: 3px 3px 3px lightgrey;
+}
   .work-thumb:after {
     position: absolute;
     top: 0;

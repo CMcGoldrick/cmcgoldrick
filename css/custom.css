@@ -1,77 +1,77 @@
-*::selection{
-  color:#007bff !important;
+*::selection {
+  color: #007bff !important;
 }
 
-hr{
-  border-top: 1px solid !important;
+hr {
+  border-top: 1.5px solid !important;
 }
 
-.home-bar{
+.home-bar {
   border-top: 1px solid #fff !important;
 }
 
-.home-title{
-    padding: 20px 10px;
-    margin-top: -60px;
+.home-title {
+  padding: 20px 10px;
+  margin-top: -60px;
 }
 
-.get-started-btn{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
+.get-started-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-.breakline{
-    background: lightcyan;
+.breakline {
+  background: lightcyan;
 }
 
 /* -- home -- */
-.profile-img{
-    max-height: 700px;
+.profile-img {
+  max-height: 700px;
 }
 
-.owl-stage-outer{
-    display: block;
-    width: 80vw;
-    margin: 0 auto;
+.owl-stage-outer {
+  display: block;
+  width: 80vw;
+  margin: 0 auto;
 }
 
-#social-icon{
-    color: #fff;
-    font-size: 1.8rem;
-    margin: 13px 23px;
-    transition: all 0.3s;
+#social-icon {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 13px 23px;
+  transition: all 0.3s;
 }
 
-#social-icon:hover{
-    transform: scale(1.7);
+#social-icon:hover {
+  transform: scale(1.7);
 }
 
-.icon-menu{
-    font-size: 2.5rem !important;
+.icon-menu {
+  font-size: 2.5rem !important;
 }
 
-.social-links{
-  display:flex;
-  justify-content: center
+.social-links {
+  display: flex;
+  justify-content: center;
 }
 
 /* --- process --- */
-.skill-h2{
-    color: #333;
-    font-weight: 700;
-    text-align:center;
+.skill-h2 {
+  color: #333;
+  font-weight: 700;
+  text-align: center;
 }
-#skills-container{
-    margin-top: 25px; 
-    padding-top: 25px; 
-    border-top: 1px solid #333;
+#skills-container {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #333;
 }
 
 /* --- work --- */
-.work-paragraph{
+.work-paragraph {
   padding: 20px;
-  background: #333;;
+  background: #333;
   color: #fff;
   font-weight: 500;
   text-align: center;
@@ -80,77 +80,72 @@ hr{
   line-height: 1.6;
 }
 
-.work-img{
-    border: 1px solid #000;
+#work-card {
+  margin: 0 auto;
+  margin-bottom: 45px;
+  width: 80%;
 }
 
-#work-card{
-    margin: 0 auto;
-    margin-bottom: 45px;
-    width: 80%;
-}
-
-.work-text > h3{
-    color:#21e742 !important;
+.work-text > h3 {
+  color: #21e742 !important;
 }
 
 .work-text > span {
-    font-style: italic;
+  font-style: italic;
 }
 
 /* -- testimonials -- */
-.testimonial-icon{
-    color: #007bff!important;
-    font-size: 35px;
-    padding: 10px;
+.testimonial-icon {
+  color: #007bff !important;
+  font-size: 35px;
+  padding: 10px;
 }
 
-.testimonial-link{
+.testimonial-link {
   font-size: 20px !important;
 }
 
 /* --- footer ---  */
-footer{
-    text-align:center;
-    display: block;
-    margin: 0 auto;
-    background-color: #fafafa;
-    height: 100px;
-    border-top: 1px solid #999;
+footer {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  background-color: #fafafa;
+  height: 100px;
+  border-top: 1px solid #999;
 }
-footer > p{
-    padding: 7px;
+footer > p {
+  padding: 7px;
 }
 
 /* -- media queries -- */
-@media(max-width: 786px){
-    #tag_canvas_wrapper{
-        display: none;
-    }
+@media (max-width: 786px) {
+  #tag_canvas_wrapper {
+    display: none;
+  }
 }
 
-
 /* -- form -- */
-.sendmailbtn{
+.sendmailbtn {
   display: block;
   margin: 0 auto;
 }
 
 /*---------------------------------------------*/
 input {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
 }
 
 input[type="number"] {
-    -moz-appearance: textfield;
-    appearance: none;
-    -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 textarea {
@@ -158,49 +153,62 @@ textarea {
   border: none;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   border-color: transparent !important;
 }
 
-input::-webkit-input-placeholder { color: #bdbdd3;}
-input:-moz-placeholder { color: #bdbdd3;}
-input::-moz-placeholder { color: #bdbdd3;}
-input:-ms-input-placeholder { color: #bdbdd3;}
+input::-webkit-input-placeholder {
+  color: #bdbdd3;
+}
+input:-moz-placeholder {
+  color: #bdbdd3;
+}
+input::-moz-placeholder {
+  color: #bdbdd3;
+}
+input:-ms-input-placeholder {
+  color: #bdbdd3;
+}
 
-textarea::-webkit-input-placeholder { color: #bdbdd3;}
-textarea:-moz-placeholder { color: #bdbdd3;}
-textarea::-moz-placeholder { color: #bdbdd3;}
-textarea:-ms-input-placeholder { color: #bdbdd3;}
+textarea::-webkit-input-placeholder {
+  color: #bdbdd3;
+}
+textarea:-moz-placeholder {
+  color: #bdbdd3;
+}
+textarea::-moz-placeholder {
+  color: #bdbdd3;
+}
+textarea:-ms-input-placeholder {
+  color: #bdbdd3;
+}
 
 /*---------------------------------------------*/
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-	border: none !important;
+  border: none !important;
 }
-
 
 /*---------------------------------------------*/
 .container {
-	max-width: 1200px;
+  max-width: 1200px;
 }
-
-
-
 
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
 
 .container-contact100 {
-  width: 100%;  
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -218,7 +226,6 @@ iframe {
   background: transparent;
   padding: 50px 0px 160px 0px;
 }
-
 
 /*==================================================================
 [ Form ]*/
@@ -260,13 +267,11 @@ iframe {
   line-height: 1.2;
 }
 
-
 /*---------------------------------------------*/
 input.input100 {
   height: 62px;
   padding: 0 35px 0 35px;
 }
-
 
 textarea.input100 {
   min-height: 169px;
@@ -292,7 +297,7 @@ textarea.input100 {
   border-radius: 31px;
   background-color: #fff;
   pointer-events: none;
-  
+
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -360,7 +365,7 @@ textarea.input100 {
   border-radius: 31px;
   background-color: #827ffe;
   pointer-events: none;
-  
+
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -371,9 +376,6 @@ textarea.input100 {
   background-color: #403866;
   width: calc(100% + 20px);
 }
-
-
-
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
