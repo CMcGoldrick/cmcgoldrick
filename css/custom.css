@@ -131,6 +131,13 @@ footer > p {
   margin: 0 auto;
 }
 
+#thank-you {
+  color: #007bff;
+  margin-top: 25px;
+  font-size: 22px;
+  text-align: center;
+}
+
 /*---------------------------------------------*/
 input {
   outline: none;
