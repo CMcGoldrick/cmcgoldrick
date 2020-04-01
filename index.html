@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/custom.css">
 
     <link rel="stylesheet" href="css/slider/reset.css">  
+    <link rel="stylesheet" href="css/slider/reset.css">  
     <link rel="stylesheet" href="css/slider/style.css">  
     <script src="js/slider/modernizr.js"></script> 
 
@@ -84,11 +85,29 @@
     <div class="intro-section" id="home-section">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 mr-auto" data-aos="fade-up">
+          <div class="col-lg-5 m-auto" data-aos="fade-up">
             <h1 class="home-title">Ciar&#225;n Francis McGoldrick</h1>
+            <p>&#10149; Full-Stack Web Application Developer</p>
             <hr class="breakline home-bar">  
-            <p>Full-Stack Web Application Developer</p>
-            <p>&#10149; C# > ASP.NET, ASP.NET Core <br> SQL <br> JavaScript &#38; HTML5</p>
+            <table>
+              <tr>
+                <td class="intro-td">Azure DevOps</td>
+                <td class="intro-td">Xamarin</td>
+              </tr>
+              <tr>
+                <td class="intro-td">ASP.NET MVC</td>
+                <td class="intro-td">SQL</td>
+              </tr>
+              <tr>
+                <td class="intro-td">ASP.NET Core</td>
+                <td class="intro-td">Javascript</td>
+              </tr>
+            </table>
+            <!-- <p>Azure DevOps</p>
+            <p>ASP.NET MVC</p>
+            <p>ASP.NET Core</p>
+            <p>SQL</p>
+            <p>JavaScript</p> -->
             <hr class="breakline home-bar">
             <div class="social-links">
               <a href="https://github.com/CMcGoldrick" target="_blank"><i id="social-icon" class="fab fa-github-square"></i></a>
@@ -121,10 +140,12 @@
         <div class="row">
           <div class="col-lg-12">
             <h2 class="section-title">My Work</h2>
+            <p style="text-align: center;color: #000;padding-bottom: 20px;font-size: 20px;">I <span style="font-style:italic; font-weight:700; color:#007bff">design</span>, <span
+              style="font-style:italic; font-weight:700; color:#007bff">develop</span> and <span
+              style="font-style:italic; font-weight:700; color:#007bff">deploy</span> web applications for personal and business purpose.
+            </p>
             <div id="work-card">
-              <p class="work-paragraph">
-                <!-- Please find a display of projects to which I have contributed.<br><br> -->
-              Projects to which I have contributed - Most of my code is not made public in repositories like Github and Bitbucket. For any inquiries about these projects or specifics on code usage, feel free to <a href="#contact-section" style="color:#007bff">Contact</a> me.</p>
+              <p class="work-paragraph">Projects to which I have contributed - These are mainly hosted in CMS systems like wordpress and Joomla. For any inquiries about details on large scale projects with Microsoft technologies or specifics on code usage, feel free to <a href="#contact-section" style="color:#007bff">Contact</a> me.</p>
             </div>
           </div>
         </div>
@@ -468,7 +489,7 @@
         var stringArray = [];
         
         if(nameEntry == ""){stringArray.push("Name")};
-        if(emailEntry == ""){stringArray.push("Email")};
+        if(emailEntry == ""){stringArray.push("E-mail")};
         if(phoneEntry == ""){stringArray.push("Phone Number")};
         if(messageEntry == ""){stringArray.push("Message")};
         
