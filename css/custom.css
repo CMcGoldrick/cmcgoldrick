@@ -1,3 +1,20 @@
+#video_box{
+  display: flex;
+  justify-content: center;
+}
+#video_overlays {
+  position:absolute;
+  float:left;
+  width:640px;
+  min-height:270px;
+  margin-top:150px;
+  z-index:300000;
+  text-align: center;
+  background: none;
+  color: red;
+}
+
+
 *::selection {
   color: #007bff !important;
 }
@@ -464,3 +481,13 @@ textarea.input100 {
     opacity: 1;
   }
 }
+
+@media (max-width: 800px) {
+  #desktop-video{
+    display: none;
+  }
+  #mobile-video{
+    display: block !important;
+  }
+}
+
