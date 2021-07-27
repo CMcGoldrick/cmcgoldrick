@@ -77,12 +77,10 @@
 
 
 
-
-
 #video_overlays {
   position:absolute;
   /* float:left; */
-  top: 30%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   width:640px;
