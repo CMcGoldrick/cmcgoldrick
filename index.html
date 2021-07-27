@@ -61,7 +61,8 @@
           <div>
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="http://www.cmcgoldrick.com/index.html" class="nav-link">Home</a></li>
+                <li><a href="#video_box" class="nav-link">Home</a></li>
+                <li><a href="#home-section" class="nav-link">Me</a></li>
                 <li><a href="#work-section" class="nav-link">Work</a></li>
                 <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
                 <!-- <li><a href="process.html" class="nav-link">Process</a></li> -->
@@ -83,13 +84,15 @@
     </header>
 
     <div id="video_box">
-      <div style="display: none;", id="video_overlays">
-        <h1 style="font-size: xx-large; font-weight: 700;">Hi there!</h1>
-        <h2 style="font-size: x-large">I build things with Software</h2>
-        <h2 style="font-size: x-large">Welcome to my website</h2>
+      <div id="video_overlays" style="display: none;">
+        <div class="page-scroll text-center">
+          <a href="#home-section" class="btn btn-circle">
+              <i class="fa fa-angle-down fa-2x animated"></i>
+          </a>
+        </div>
       </div>
       <div>
-        <video id="desktop-video" muted autoplay playsinline>
+        <video id="desktop-video" muted autoplay playsinline loop>
           <source src="main_bg.mp4" type="video/mp4">
         </video>
         <video id="mobile-video" style="display: none;" muted autoplay playsinline loop>
@@ -103,8 +106,9 @@
         <div class="row align-items-center">
           <div class="col-lg-5 m-auto" data-aos="fade-up">
             <h1 class="home-title">Ciar&#225;n Francis McGoldrick</h1>
-            <p>&#10149; Full-Stack Web Application Developer</p>
-            <hr class="breakline home-bar">  
+            <p>&#10149; I build things with computers</p>
+            <hr class="breakline home-bar"> 
+            <p style="text-align: center;">SPECIALIZATIONS:</p> 
             <table>
               <tr>
                 <td class="intro-td">Azure DevOps</td>
@@ -112,7 +116,7 @@
                 <td class="intro-td">HTML5</td>
               </tr>
               <tr>
-                <td class="intro-td">ASP.NET MVC</td>
+                <td class="intro-td">ASP.NET</td>
                 <td class="intro-td">SQL</td>
                 <td class="intro-td">CSS3</td>
               </tr>
@@ -146,7 +150,7 @@
           </div>
           <div class="col-lg-2 ml-auto"  data-aos="fade-up" data-aos-delay="100">
             <figure class="img-absolute">
-              <img class="profile-img" src="images/ciaran-casual.jpeg" alt="Image" class="img-fluid">
+              <img class="profile-img" src="images/ciaran-profile-2021-v2.jpeg" alt="Image" class="img-fluid">
             </figure>
           </div>
         </div>
@@ -160,7 +164,7 @@
             <h2 class="section-title">My Work</h2>
             <p style="text-align: center;color: #000;padding-bottom: 20px;font-size: 20px;">I <span style="font-style:italic; font-weight:700; color:#007bff">design</span>, <span
               style="font-style:italic; font-weight:700; color:#007bff">develop</span> and <span
-              style="font-style:italic; font-weight:700; color:#007bff">deploy</span> web applications for personal and business purpose.
+              style="font-style:italic; font-weight:700; color:#007bff">deploy</span> Web and Blockchain applications for personal and business purpose.
             </p>
             <div id="work-card">
               <p class="work-paragraph">Projects to which I have contributed - These are mainly hosted in CMS systems like wordpress and Joomla. For any inquiries about details on large scale projects with Microsoft technologies or specifics on code usage, feel free to <a href="#contact-section" style="color:#007bff">Contact</a> me.</p>
@@ -398,7 +402,7 @@
     </div>
 
     <footer>
-        <p>Made With <img style="height:25px" src="images/heavy-black-heart.png"> By Ciarán McGoldrick</p>
+        <p>Computers, Philosophy, Liberty <img style="height:25px" src="images/heavy-black-heart.png"></p>
       <p>
         Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved</a>
       </p>
