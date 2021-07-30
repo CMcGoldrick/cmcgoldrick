@@ -567,8 +567,8 @@ textarea.input100 {
   #desktop-video{
     display: none;
   }
-  #mobile-video{
+  /* #mobile-video{
     display: block !important;
-  }
+  } */
 }
 

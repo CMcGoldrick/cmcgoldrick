@@ -3,7 +3,7 @@
   <head>
     <title>Ciaran Francis McGoldrick | Web Developer</title>
     <!-- <link rel="icon" href="images/favicon-btc.ico" type="image/x-icon"/> -->
-    <link rel="icon" href="images/favicon-c.ico" type="image/x-icon"/>
+    <link rel="icon" href="images/favicon-btc.ico" type="image/x-icon"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -89,27 +89,49 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-5 m-auto" data-aos="fade-up">
-            <h1 class="home-title">Under Contruction</h1>
-            <!-- <div style="position: relative;" class="image-absolute-box">
-              <div style="background-color:#21e742;" class="box" data-aos="fade-up">
-                <i class="fas fa-user-check"></i><img style="height:50px" src="images/upwork_400x400.png" alt="Image"
-                  class="img-fluid">
-                <h3>100% job success on Upwork</h3>
-              </div>
+            <div>
+              <h1 class="home-title">Donate ₿itcoin</h1>
+              <img style="width: 50%;" src="images/btc-address.jpeg">
+              <p style="font-size:smaller;" id="div1">bc1q4rr9u4jteww3e9crgcv4je3r375fe8ucq8uyzh</p>
+              <button id="button1" onclick="CopyToClipboard('div1')">Click to copy</button>
             </div>
-           -->
           </div>
           <div class="col-lg-2 ml-auto"  data-aos="fade-up" data-aos-delay="100">
             <figure class="img-absolute">
-              <img class="profile-img" src="images/books.jpg" alt="Image" class="img-fluid">
+              <img class="profile-img" src="images/bitcoin-bull.jpg" alt="Image" class="img-fluid">
             </figure>
           </div>
         </div>
       </div>
     </div>
 
-    <div style="height: 100vh;"></div>
-
+      <div class="site-section section-2 bg-light" id="work-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="work-card">
+                <h1 style="justify-content: center;font-weight: bold;color: black;">.btc Domains for Sale (maybe):</h1>
+                <ul class="work-paragraph" type="square">
+                  <li>subscription.btc</li>
+                  <li>aerlingus.btc</li>
+                  <li>guinness.btc</li>
+                  <li>bavaria.btc</li>
+                  <li>saigon.btc</li>
+                  <li>kerrygold.btc</li>
+                  <li>wirex.btc</li>
+                  <li>value.btc</li>
+                  <li>vale.btc</li>
+                  <li>petrobras.btc</li>
+                  <li>betmgm.btc</li>
+                  <li>bcbs.btc</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+      </div>
+  
     <footer>
         <p>Computers, Philosophy, Liberty <img style="height:25px" src="images/favicon-btc-32x32.png"></p>
       <p>
@@ -143,6 +165,21 @@
   <script src="js/slider/main.js"></script> 
 
   <style>
+    button
+    {
+      height:30px;
+      width:150px;
+      border-radius:8px;
+      padding:10px;
+      font-size:20px;
+      font-family: 'Oswald', sans-serif;
+      height:52px;
+      cursor:pointer;
+      font-weight: 600;
+      color: #007bff;
+      background-color:#fff;
+    }
+    
     #send-spinner,
     #send-spinner:before,
     #send-spinner:after {
@@ -205,6 +242,22 @@
   </style>
 
   <script>
+    function CopyToClipboard(containerid) {
+      if (document.selection) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(containerid));
+        range.select().createTextRange();
+        document.execCommand("copy");
+      } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(containerid));
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        alert("Text has been copied, now send me that Cheese")
+      }
+    }
+
+
     $('#video_overlays').delay(17900).fadeIn(2000);
 
     function sendMail(){
