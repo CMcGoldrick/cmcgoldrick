@@ -564,7 +564,7 @@ textarea.input100 {
 }
 
 @media (max-width: 800px) {
-  #desktop-video{
+  #desktop-video, #video-link-button{
     display: none;
   }
   /* #mobile-video{
