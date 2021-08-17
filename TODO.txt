@@ -1,4 +1,2 @@
-add missing experience
-fix mobile links for article and crypto page
 fix mobile side scroll issue
 fix mailer

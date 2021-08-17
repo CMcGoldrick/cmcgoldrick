@@ -1,3 +1,8 @@
+function goToUrl(url)
+{
+  window.location.href = url;
+}
+
  AOS.init({
  	duration: 800,
  	easing: 'slide',
